@@ -1,0 +1,1094 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AEDBF45-112C-4329-8629-C3AE8F67B8CE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ServicoConfirmaRecargaSpTrans</RootNamespace>
+    <AssemblyName>ServicoConfirmaRecargaSpTrans</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>C:\Users\heberthSilva\Desktop\servico\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F2B56FB01E1FBDD1A1A37E04F852C64E1CE5B51B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ServicoConfirmaRecargaSpTrans_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD\BD_KIM_Entities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_KIM_Entities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\BD_KIM_Entities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\BD_KIM_Entities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_KIM_Entities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_cancelar_pedidos_itens_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_cancelar_pedidos_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_cupom_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_historico_pedido_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_historico_pedido_status_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_historico_revenda_pedido_status_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_pedido_aguardando_recarga_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_pedido_FastCash_arquivo_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_pedido_historico_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_revalidacao_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_status_pedido_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_status_pre_pedido_pagamento_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_status_pre_pedido_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_terminal_operadora_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_terminal_ope_usuario_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_ultimo_pedido_historico_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_ultimo_pedido_historico_site_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_consulta_usuario_cartao_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_detalhes_cliente_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_helpdiagrams_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_lista_pedido_envio_email_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_lista_terminal_ope_usuario_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_lista_terminal_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_notificacao_pedido_nao_pago_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_relatorio_relacionamento_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_acerto_operadora_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_auditoria_kimlometros_beneficios_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_bloqueio_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_cadastro_usuarios_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_cancelamentos_rv_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_carteira_digital_contas_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_controle_pagamentos_usuario_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_doacoes_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_extratokimlometros_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_FastCash_conc_pedidos_cashIn_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_FastCash_conc_pedidos_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_kimlometrosextrato_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_pedidos_doacoes_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_pedido_FastCash_arquivo_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_prestacao_contas_gateway_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_prestacao_contas_operadora_processado_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_prestacao_contas_operadora_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_rel_revenda_vendas_por_revendedor_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_remessa_api_itau_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_searchReversal_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_usuario_saldo_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_verifica_sessao_termo_uso_fidelidade_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sp_verifica_sessao_termo_uso_Result.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\sysdiagrams.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_acao_banner.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_analise_spd_conta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_api_copa.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_aux_developer.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_aux_developer_operadora.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_avaliacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_banco.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_banco_conta_digital.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_banner.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_black_list.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_black_list_usuario_forma_pagamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_bloqueio_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_boleto.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_campanha.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_canal.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_cartao_tarifa_sptrans.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_chave_pix.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_cidade.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_conta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_controle.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_crm_motivo_relacionamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_crm_protocolo_atendimento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_crm_relacionamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_crm_relacionamento_arquivos.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_crm_relacionamento_usr_atribuido.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_crm_situacao_relacionamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_crm_situacao_relacionamento_usr_atribuido.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_crm_tipo_relacionamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_cupom.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_cupom_categoria_loja.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_cupom_loja.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_cupom_oferta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_cupom_usuario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_diagnostico_contas_dock.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_dicionario_erro.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_duvida.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_duvida_assunto.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_duvida_assunto_revenda.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_duvida_revenda.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_envio_email.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_erro_abertura_conta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_erro_sistema.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_estado_civil.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_estorno_pedido.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_estorno_pedido_item.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_estudante_complemento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_estudante_grau.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_estudante_serie.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_estudante_turno.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_etapa_status_via.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_etapa_via.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_etapa_via_rejeicao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_faq.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_fastcash_phill.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_fila_analise_revalidacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_fila_envio_email.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_fila_notificacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_fluxo_etapa_via.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_forma_pagamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_formulario_pergunta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_formulario_resposta_usuario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_gateway.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_gateway_fastcash.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_ged_pedido.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_ged_pedido_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_ged_pedido_cash_in.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_ged_revalidacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_ged_temporario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_historico_pedido_pagamento_picpay.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_historico_requisicao_via.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_importacao_adyen.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_instrucao_boleto.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_integracao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_integracao_historico.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_integracao_parametro_notificacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_kimlometros.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_kimlometros_config.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_kimlometros_expirados.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_kimlometros_integracoes_diarias.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_kimlometros_resgate.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_linha_itinerario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_linha_paradas.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_alt_telefone.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_black_list.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_black_list_usuario_forma_pagamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_conciliacao_fastcash.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_doacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_email.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_erro_abertura_conta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_localizacao_usuario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_notificacao_gateway.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_pedido.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_pedido_estocagem.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_pedido_item.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_pedido_item_cancelamento_rv.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_registro.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_sbe.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_sms.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_terminal.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_usuario_alteracao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_usuario_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_usuario_programa_fidelidade.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_usuario_revenda.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_usuario_revenda_comissao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_usuario_revenda_limite.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_log_usuario_revenda_suspenso.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_menu_adm.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_modelo_email.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_motivo_baixa.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_nacionalidade.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_natureza_juridica.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_notificacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_ofertas.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_ofertas_categoria.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_ofertas_loja.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_acerto.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_banco_conta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_cidade.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_empresa.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_empresa_tipo_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_forma_pagamento_gateway.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_linha.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_mapa_params.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_mensagem.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_parceiro_logistico.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_revenda_secundaria.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_tipo_canal.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_operadora_versao_api.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_orgao_emissor.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pagamento_pedido_parcelado.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pagina.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pagina_controle.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pagina_cupom.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_paradas.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parameto_itau.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_anti_fraude.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_cashback.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_cashdeal.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_comissao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_email.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_parcelamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_pix_wso.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_revenda_comissao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_rv.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_tentativa_most.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parametro_terceiro.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_parceiro_logistico.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_atm.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_cash_in.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_entrega.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_item.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_item_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_pagamento_picpay.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_pagamento_pix.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_revenda.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_pedido_rv.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_perfil.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_perfil_sub_menu_adm.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_posto.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_posto_operadora.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_programa_fidelidade.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_programa_fidelidade_resgate.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_quadro_horario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_recarga_automatica.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_recarga_programada.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_rel_liq_cobranca.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_remessa_cobranca.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_requisicao_qrcode.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_requisicao_via.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_servico.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_status_conta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_status_conta_dock.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_status_entrega.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_status_pedido.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_status_pedido_item.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_status_pedido_pagamento_picpay.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_status_pedido_pagamento_pix.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_status_requisicao_via.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_sub_menu_adm.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tarefa_entrega.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tarifa.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_taxa_adm.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_taxa_operadora_tipo_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tentativa_most.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_terminal.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_termo_de_uso.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_termo_operadora.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_canal.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_cartao_estoque.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_cartao_forma_pagamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_cartao_tecnologia.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_cartao_valor.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_controle.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_documento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_email.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_endereco.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_notificacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_ocupacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_pedido_item.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_pedido_item_fluxo_status.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_telefone.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_tipo_transacao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_transacao_conta_digital.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_transacao_programa_fidelidade.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_uf.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_adm.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_adm_operadora_empresa.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_banco_conta.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_banco_conta_chave.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_cartao_credito.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_cartao_credito_endereco_cobranca.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_cartao_credito_gateway_token.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_cartao_favorito_linha.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_conta_corrente.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_cupom.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_dependente.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_dependente_documento_banco.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_documento_banco.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_endereco.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_equipamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_favorito_linha.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_favorito_paradas.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_revenda_comissao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_revenda_operadora.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_revenda_pre_estocagem.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_saldo.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_solicitacao_exclusao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_usuario_termo_de_uso.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\tb_valores_sptrans.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vwListDashBoard.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_relacionamento_usuario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_tb_crm_motivo_relacionamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_tb_crm_tipo_relacionamento.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_tb_operadora.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_tb_perfil.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_tb_tipo_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_tb_usuario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_tb_usuario_adm.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_tb_usuario_pedido.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_usuario_cadastro_cartao.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_usuario_pedidos.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_bi_vendas.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_Cupom_Disponivel_Usuario.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_kimlometros_agrupados.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_Pedidos_AntiFraude.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_Pedidos_AntiFraude_Recarga_Celular.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_Pedidos_AntiFraude_Servicos_Digitais.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_pedidos_pagar_operadora.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_qnt_usuarios_operadoras.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_SaldoBloqueado.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_ServicosOperadoras.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_UsuarioCartaoOperadora.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BD\vw_VendasRevenda.cs">
+      <DependentUpon>BD_KIM_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Retorno\MensagemConstants.cs" />
+    <Compile Include="Retorno\DefaultRetorno.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="BD\BD_KIM_Entities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BD_KIM_Entities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BD\BD_KIM_Entities.edmx.diagram">
+      <DependentUpon>BD_KIM_Entities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="ServicoConfirmaRecargaSpTrans_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BD\BD_KIM_Entities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BD_KIM_Entities.Context.cs</LastGenOutput>
+      <DependentUpon>BD_KIM_Entities.edmx</DependentUpon>
+    </Content>
+    <Content Include="BD\BD_KIM_Entities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BD_KIM_Entities.edmx</DependentUpon>
+      <LastGenOutput>BD_KIM_Entities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
